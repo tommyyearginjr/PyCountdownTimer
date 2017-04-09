@@ -2,6 +2,7 @@
 
 import os
 import time
+import random
 
 def SpaceSeparator():
     print("\n")
@@ -49,4 +50,6 @@ for i in range(seconds, -1, -1):
 
 os.system('clear')
 
-print('\n     Timer ended. I bid you peace.\n')
+randQuot = ('I bid you peace.', 'May the Force be with you.', 'Live long and prosper.', 'May God bless.', 'Happy trails to you, \'til we meet again.')
+
+print('\n     Timer ended. {}\n'.format(random.choice(randQuot)))
